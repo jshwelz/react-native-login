@@ -3,7 +3,7 @@ import {StyleSheet, Text, AsyncStorage} from 'react-native';
 import {Container, Item, Form, Input, Button, Label} from 'native-base';
 import * as firebase from 'firebase';
 var firebaseConfig = {
-  apiKey: 'AIzaSyBrBeMeXRAk5CtHZvDrnjQ0yVX_dnAfyOM',
+  apiKey: '',
   authDomain: 'learning-253516.firebaseapp.com',
   databaseURL: 'https://learning-253516.firebaseio.com',
   projectId: 'learning-253516',
