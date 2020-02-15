@@ -3,7 +3,7 @@ import {StyleSheet, Text, View} from 'react-native';
 import * as firebase from 'firebase';
 
 export default class Main extends React.Component {
-  state = {currentUser: null};
+  state = {currentUser: undefined};
 
   componentDidMount() {
     const {currentUser} = firebase.auth();

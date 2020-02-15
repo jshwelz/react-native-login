@@ -2,21 +2,12 @@ import React from 'react';
 import {StyleSheet, Text, AsyncStorage} from 'react-native';
 import {Container, Item, Form, Input, Button, Label} from 'native-base';
 import * as firebase from 'firebase';
-var firebaseConfig = {
-  apiKey: '',
-  authDomain: 'learning-253516.firebaseapp.com',
-  databaseURL: 'https://learning-253516.firebaseio.com',
-  projectId: 'learning-253516',
-  storageBucket: 'learning-253516.appspot.com',
-  messagingSenderId: '651600652160',
-  appId: '1:651600652160:web:7230408c1be2cd1e244365',
-};
+import config from '../firebase.config' 
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+firebase.initializeApp(config);
 
 export default class Login extends React.Component {
   state = {email: '', password: '', errorMessage: null};
-
   handleLogin = () => {
     const {email, password} = this.state;
     firebase
